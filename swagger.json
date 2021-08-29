@@ -1,0 +1,99 @@
+{
+    "openapi": "3.0.0",
+  
+    "info": {
+      "title": "API do projeto Cadastro de candidatos jobsNET",
+      "description": "essa API foi desenvolvida em conjunto com o professor na mentoria Gama Academy",
+      "version": "0.0.1"
+    },
+  
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "ambiente de desenvolvimento"
+      }
+    ],
+  
+    "paths": {
+      "/register": {
+        "post": {
+          "summary": "Cadastro de candidato",
+          "description": "Rota de cadastro de usuário, recebe: nome, genero, email, cep, data, cargo, estado civil, endereço, bairro, estado, celular, rg e cpf",
+          "tags": ["candidato"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "nome": {
+                      "type": "string"
+                    },
+                    "genero": {
+                      "type": "string"
+                    },
+                    "cep": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "data":{
+                      "type":"date"
+                    },
+                    "cargo":{
+                      "type":"string"
+                    },
+                    "estadoCivil":{
+                      "type":"string"
+                    },
+                    "endereco":{
+                      "type":"string"
+                    },
+                    "bairro":{
+                      "type":"string"
+                    },
+                    "cidade":{
+                      "type":"string"
+                    },
+                    "estado":{
+                      "type":"string"
+                    },
+                    "celular":{
+                      "type":"number"
+                    },
+                    "rg":{
+                      "type":"number"
+                    },
+                    "cpf":{
+                      "type":"number"
+                    }
+                  }
+                },
+                "examples": {
+                  "cadastro": {
+                    "value": {
+                      "nome": "Maria Maria",
+                      "genero": "Feminino",
+                      "cep": "00000-000",
+                      "email": "maria.mar@gmail.com",
+                      "cargo": "desenvolvedora",
+                      "data": "01/01/1992",
+                      "estadoCivil":"solteira",
+                      "endereco":"rua antonio martins, 278",
+                      "bairro":"jd das flores",
+                      "cidade":"São Paulo",
+                      "estado":"SP",
+                      "celular":"981000000",
+                      "rg":"222222222",
+                      "cpf":"55555555555"
+                    
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
