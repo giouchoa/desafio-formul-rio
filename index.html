@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
+    <script src="./script.js"></script>
+    <title>Cadastre seu currículo .:JobsNET:.</title>
+</head>
+<body>
+    <form name="formulario" id="container">
+
+    <div>
+        <h1>Banco de currículos JobsNET - Cadastre o seu!</h1>
+        <h3>Dados Pessoais</h3>
+    </div>
+
+    <form>
+        <div>
+            <label>Nome Completo</label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+        <div>
+            <label>Cargo Pretendido</label>
+            <input type="text" name="cargo" id="cargo" required>
+        </div>
+        <div>
+            <label>Data de Nascimento</label>
+            <input type="date" name="dataNasc" id="data" required>
+        </div>
+        
+        <div>
+            <label>Estado Civil</label>
+            <select name="estadoCivil" id="estadoCivil" required>
+                <option value="embranco"></option>
+                <option value="solt">Solteiro</option>
+                <option value="casa">Casado</option>
+                <option value="divorcio">Divorciado</option>
+                <option value="viuva">Viúvo</option>
+                </select>
+        </div>
+
+        <div>
+            <label>Sexo</label>
+            <select name="gênero" id="genero">
+                <option value="embranco"></option>
+                <option value="Feminino">Feminino</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco" required>
+            <label>Bairro</label>
+            <input type="text" name="bairro" id="bairro" required>
+
+            <label>Cidade</label>
+            <input type="text" name="cidade" id="cidade" required>
+            <label>Estado</label>
+            <select name="estado"  id="estado" required>
+                <option value="embranco"></option>
+                <option value="Acre">AC</option>
+                <option value="Alagoas">AL</option>
+                <option value="Amapá">AP</option>
+                <option value="Amazonas">AM</option>
+                <option value="Bahia">BA</option>
+                <option value="Ceará">CE</option>
+                <option value="DistritoFederal">DF</option>
+                <option value="Espírito Santo">ES</option>
+                <option value="Goiás">GO</option>
+                <option value="Maranhão">MA</option>
+                <option value="MatoGrosso">MT</option>
+                <option value="MatoGrossoSul">MS</option>
+                <option value="MinasGerais">MG</option>
+                <option value="Pará">PA</option>
+                <option value="Paraíba">PB</option>
+                <option value="Paraná">PR</option>
+                <option value="Pernambuco">PE</option>
+                <option value="Piauí">PI</option>
+                <option value="RioJaneiro">RJ</option>
+                <option value="RioGrandeNorte">RN</option>
+                <option value="RioGrandeSul">RS</option>
+                <option value="Rondônia">RO</option>
+                <option value="Roraima">RR</option>
+                <option value="SantaCatarina">SC</option>
+                <option value="SãoPaulo">SP</option>
+                <option value="Sergipe">SE</option>
+                <option value="Tocantins">TO</option>
+
+            </select>
+            
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" required>
+        </div>
+
+        <div>
+            <label>Telefone Fixo 1</label>
+            <input type="text" name="telfixo1" id="fonefixo1">
+            <label>Telefone Fixo 2</label>
+            <input type="text" name="telfixo2" id="fonefixo2">
+            <label>Celular</label>
+            <input type="text" name="celular" id="celular" required>
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="text" name="email" id="email" required>
+        </div>
+
+        <div>
+            <h3>Documentos</h3>
+        </div>
+
+        <div>
+            <label>Identidade</label>
+            <input type="text" name="identidadeRG" id="rg">
+            <label>CPF</label>
+            <input type="text" name="cpf" id="cpf" required>
+        </div>
+
+        <div>
+            <label>Possui Veículo</label>
+            <select name="veiculo" id="veiculo">
+                <option value="embranco"></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label>Habilitação</label>
+            <input type="text" name="habilitacao" id="habilitacao">
+
+        </div>
+
+        <div><button type="submit" id="enviar" onclick="check_form()">ENVIAR</button></div>
+                
+
+        
+    </form>
+    
+</body>
+</html>
